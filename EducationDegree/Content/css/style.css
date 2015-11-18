@@ -1,0 +1,430 @@
+﻿@font-face {
+    font-family: "B Nazanin";
+    src: url("../fonts/B Nazanin.eot?") format("eot"),url("../fonts/B Nazanin.woff") format("woff"),url("../fonts/BNaznnBd.ttf") format("truetype"),url("B Nazanin.svg#B NazaninBold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url(../images/bg.png) repeat;
+    direction: rtl;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    font-family: 'B Nazanin';
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'B Nazanin';
+    font-weight: 800 !important;
+}
+
+
+
+span.input-group-addon {
+    font-size: 14px;
+    /*font-weight: bold;*/
+}
+
+.btn.dropdown-toggle {
+    font-weight: normal;
+}
+
+.head-title {
+    background: #0ebbf3 url('./images/bg-head-title.png') repeat-x right bottom !important;
+    color: #fff;
+    text-align: center;
+}
+
+.sub-header {
+    background: #d00303 !important;
+    color: #fff;
+    font: bold 12px/15px B Nazanin;
+    text-align: center;
+    border-left: solid 1px #f8f8f8;
+}
+
+i.delete,
+i.reject {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+i.fa-edit,
+i.accept {
+    color: #0da831;
+    cursor: pointer;
+}
+
+i.disabled {
+    color: rgba(150, 150, 150, 1);
+    cursor: default !important;
+}
+
+
+.table-hover > tbody > tr:hover {
+    background: #fed5a5 !important;
+}
+
+.tbl-sub-header tr td {
+    text-align: center;
+}
+
+.tbl-sub-header > tbody > tr:hover {
+    background: #f8f8f8 !important;
+}
+
+.line-body {
+    height: 4px;
+    background: url('../images/line-body.png') repeat-x right top;
+}
+
+/* Generated via www.cssmenubuilder.com */
+
+.logo {
+    border: 0 none;
+    padding: 10px;
+    height: 86px;
+}
+
+.logo-company {
+    background: #6c8fc4 url('../images/logo-company.jpg') no-repeat center center;
+    width: 100%;
+    height: 66px;
+}
+
+.line-logo {
+    background: url('../images/line-logo.jpg') repeat-x right top;
+    height: 3px;
+    border: 0 none;
+}
+
+.breadcrumb-content {
+    margin-top: 30px;
+}
+
+.back-content {
+    background: url('../images/back-content.png') repeat-x right top;
+    height: 52px;
+    margin: 0 -15px 0 -21px;
+    padding: 5px 10px;
+    border-right: solid 1px #a3daf6;
+}
+
+    .back-content span {
+        font: bold 18px/40px 'B Nazanin';
+        color: #fff;
+        text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+    }
+
+.icon-list {
+    background: url('../images/icon-list.png') no-repeat right top;
+    height: 63px;
+    width: 44px;
+    margin: 0 0 0 5px;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+    .icon-list.left {
+        left: 10px;
+    }
+
+    .icon-list.center {
+        left: 60px;
+    }
+
+    .icon-list.right {
+        left: 110px;
+    }
+
+.exit {
+    background: url('../images/opened.png') no-repeat center 28px;
+    width: 44px;
+    height: 60px;
+}
+
+.change-password {
+    background: url('../images/key.png') no-repeat center 28px;
+    width: 44px;
+    height: 60px;
+}
+
+.information {
+    background: url('../images/question.png') no-repeat center 28px;
+    width: 44px;
+    height: 60px;
+}
+
+.modal-header,
+.panel-title {
+    border-bottom: 1px solid #ccc;
+    background: #0ebbf3 url('../images/bg-head-title.png') repeat-x right bottom;
+}
+
+    .panel-title span {
+        padding: 9px 10px 0 0;
+        font: 18px 'B Nazanin';
+        color: #fff;
+    }
+
+    .panel-title i {
+        font-size: 14px !important;
+    }
+
+h4.modal-title {
+    padding: 0 15px 0 0;
+    margin: 0;
+    font: 18px 'B Nazanin';
+    color: #fff;
+}
+
+button.close {
+    font-size: 25px;
+    padding: 1px 5px;
+}
+
+
+.back-top-box {
+    background: #f6f6f6 url('../images/back-top-box.png') repeat-x right bottom;
+    min-height: 50px;
+    margin: -10px -10px 10px -10px;
+    padding: 15px;
+}
+
+.back-right-box {
+    background: #fff url('../images/back-right-box.png') repeat-y right top;
+    min-height: 250px;
+    margin: 0;
+    padding: 15px 5px;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > th,
+.table-hover > tbody > tr:hover > th,
+.table-striped > tbody > tr:nth-child(2n+1) > th,
+.table-hover > tbody > tr > th {
+    background: #3e3e3e;
+    color: #fff;
+    font-weight: bold;
+}
+
+    .table-striped > tbody > tr:nth-child(2n+1) > th.edit-remove,
+    .table-hover > tbody > tr:hover > th.edit-remove,
+    .table-striped > tbody > tr:nth-child(2n+1) > td.edit-remove,
+    .table-hover > tbody > tr:hover > td.edit-remove,
+    .table-hover > tbody > tr > th.edit-remove,
+    .table-hover > tbody > tr > td.edit-remove {
+        width: 3% !important;
+        text-align: center !important;
+    }
+
+.modal .pagination {
+    margin: 0;
+}
+
+.no-taeed a {
+    color: #ff0000;
+}
+
+    .no-taeed a:hover {
+        color: #d00303;
+    }
+
+.taeed a {
+    color: #0da831;
+}
+
+    .taeed a:hover {
+        color: #55dc27;
+    }
+
+/*#region Pager styles */
+.pagination a:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+}
+
+.pagination input {
+    border: 0 none;
+    font-family: 'FontAwesome';
+    background: none;
+    padding: 0;
+    font-size: 12px;
+}
+
+.pagination i {
+    font-size: 8px;
+}
+
+input[name=BtnFirst], input[name=BtnPrevius], input[name=BtnNext], input[name=BtnLast] {
+    font-family: 'FontAwesome';
+    border: none;
+}
+
+/*#endregion */
+
+
+.hidden {
+    display: none;
+}
+
+.borderNone {
+    border: none !important;
+}
+
+/*#region new */
+.logo-page {
+    background: url('../images/logo-page.png') no-repeat right top;
+    height: 66px;
+    width: 717px;
+    margin: 10px;
+}
+
+.date-box {
+    margin: 20px 0 0 20px;
+    background: url('../images/line-date.png') repeat-x left center;
+    height: 50px;
+    width: 60%;
+}
+
+.item-link-top {
+    width: 45px;
+    height: 45px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    border-radius: 90px;
+    background: #f5f5f5;
+    -webkit-box-shadow: 2px 0px 2px 0px rgba(155, 155, 155, 0.75);
+    -moz-box-shadow: 2px 0px 2px 0px rgba(155, 155, 155, 0.75);
+    box-shadow: 2px 0px 2px 0px rgba(155, 155, 155, 0.75);
+    text-align: center;
+    cursor: pointer;
+}
+
+    .item-link-top:hover {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        background: #f1f1f1;
+    }
+
+    .item-link-top i {
+        font-size: 18px;
+        padding: 13px;
+    }
+
+        .item-link-top i.green {
+            color: #84bc46;
+        }
+
+        .item-link-top i.red {
+            color: #b63333;
+        }
+
+        .item-link-top i.blue {
+            color: #0ebbf3;
+        }
+
+
+.date-time {
+    padding: 2px 2px 0 0;
+    text-align: right;
+}
+
+
+    .date-time span {
+        font: normal 17px 'B Nazanin';
+        color: #848484;
+    }
+
+.name-user {
+    padding: 0 2px 0 0;
+    text-align: right;
+}
+
+    .name-user span {
+        font: normal 15px 'B Nazanin';
+        color: #84bc46;
+    }
+
+.copy-right {
+    text-align: left;
+    direction: ltr;
+    padding: 10px 0 0 20px;
+}
+
+    .copy-right a,
+    .copy-right a:hover {
+        border-left: 1px solid #0ebbf3;
+        font: normal 10px 'Segoe UI Semibold' !important;
+        color: #737373;
+        padding-left: 5px;
+    }
+
+.kmu-footer {
+    padding: 10px;
+}
+
+span.logo-kmu-footer {
+    font: 14px 'B Nazanin';
+    color: #333452;
+    padding: 10px;
+}
+
+button > i {
+    font-size: 14px !important;
+}
+
+.col-md-10 {
+    padding: 15px;
+}
+
+.back-box {
+    /*width: 333px;*/
+    padding: 0;
+    color: #222;
+    font: 14px B Nazanin, Helvetica, sans-serif;
+    background: #fff url('../images/bg-content.png') repeat-y right top;
+    min-height: 480px;
+    -webkit-box-shadow: 0px -3px 3px 0px rgba(168, 168, 168, 0.75);
+    -moz-box-shadow: 0px -3px 3px 0px rgba(168, 168, 168, 0.75);
+    box-shadow: 0px -3px 3px 0px rgba(168, 168, 168, 0.75);
+    margin-top: 10px;
+}
+.back-box-post {
+    /*width: 333px;*/
+    padding: 0;
+    color: #222;
+    font: 14px B Nazanin, Helvetica, sans-serif;
+    min-height: 431px;
+    -webkit-box-shadow: 0px -3px 3px 0px rgba(168, 168, 168, 0.75);
+    -moz-box-shadow: 0px -3px 3px 0px rgba(168, 168, 168, 0.75);
+    box-shadow: 0px -3px 3px 0px rgba(168, 168, 168, 0.75);
+    margin-top: 10px;
+}
+
+.back-box-bottom {
+    background: url('../images/bg-bottom.png') repeat-x right bottom;
+    height: 8px;
+}
+
+#cssmenu {
+    margin-right: -3px;
+}
+
+/*#endregion */
+
+span.input-group-addon {
+    width: 100px;
+}
+
+#manageInfo .input-group input#txtRaster {
+    width: 136%;
+}
+
+textarea#txtDescription {
+    width: 126%;
+    height: 100px;
+}
+

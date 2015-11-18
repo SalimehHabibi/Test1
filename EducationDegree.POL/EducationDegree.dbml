@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="educationDegree" Class="EducationDegreeDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=educationDegree;Integrated Security=True" SettingsObjectName="EducationDegree.POL.Properties.Settings" SettingsPropertyName="educationDegreeConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.fieldInfo" Member="fieldInfos">
+    <Type Name="fieldInfo">
+      <Column Name="fieldCode" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fieldName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="dateInsert" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="fieldInfo_postFieldInfo" Member="postFieldInfos" ThisKey="fieldCode" OtherKey="fieldCode" Type="postFieldInfo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.userInfo" Member="userInfos">
+    <Type Name="userInfo">
+      <Column Name="userCode" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="lName" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="userName" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="pass" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mobile" Type="System.String" DbType="Char(11)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.gradeInfo" Member="gradeInfos">
+    <Type Name="gradeInfo">
+      <Column Name="gradeCode" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="gradeName" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Association Name="gradeInfo_postFieldInfo" Member="postFieldInfos" ThisKey="gradeCode" OtherKey="gradeCode" Type="postFieldInfo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.postFieldInfo" Member="postFieldInfos">
+    <Type Name="postFieldInfo">
+      <Column Name="postFieldCode" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="postCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fieldCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tendencyCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gradeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dataInsert" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="fieldInfo_postFieldInfo" Member="fieldInfo" ThisKey="fieldCode" OtherKey="fieldCode" Type="fieldInfo" IsForeignKey="true" />
+      <Association Name="gradeInfo_postFieldInfo" Member="gradeInfo" ThisKey="gradeCode" OtherKey="gradeCode" Type="gradeInfo" IsForeignKey="true" />
+      <Association Name="postInfo_postFieldInfo" Member="postInfo" ThisKey="postCode" OtherKey="postCode" Type="postInfo" IsForeignKey="true" />
+      <Association Name="tendencyInfo_postFieldInfo" Member="tendencyInfo" ThisKey="tendencyCode" OtherKey="tendencyCode" Type="tendencyInfo" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.postInfo" Member="postInfos">
+    <Type Name="postInfo">
+      <Column Name="postCode" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="postName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="raster" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+      <Column Name="dateInsert" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="postInfo_postFieldInfo" Member="postFieldInfos" ThisKey="postCode" OtherKey="postCode" Type="postFieldInfo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tendencyInfo" Member="tendencyInfos">
+    <Type Name="tendencyInfo">
+      <Column Name="tendencyCode" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tendencyName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="fieldCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="deleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tendencyInfo_postFieldInfo" Member="postFieldInfos" ThisKey="tendencyCode" OtherKey="tendencyCode" Type="postFieldInfo" />
+    </Type>
+  </Table>
+</Database>
