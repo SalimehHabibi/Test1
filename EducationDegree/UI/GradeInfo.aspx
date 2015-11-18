@@ -188,7 +188,7 @@
  <%-------------------------------------------------------Document Ready -------------------------------------------------%>
     <script >
         $(document).ready(function () {
-            alert('test');
+           
             alert('test2');
             $(document).data("countTotal", 0);
             bindPager('RequestPager');
